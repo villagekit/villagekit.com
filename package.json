@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-catalyst",
-  "description": "Gatsby Starter: Gatsby-Theme-Catalyst-Core, Gatsby-Theme-Catalyst-header-top, Gatsby-Theme-Catalyst-footer",
+  "name": "villagekit-com",
+  "description": "website for villagekit.com",
   "version": "1.0.0",
   "private": true,
-  "author": "Eric Howey <eric@erichowey.dev>",
+  "author": "Village Kit <hello@villagekit.com>",
   "dependencies": {
     "gatsby": "^2.20.25",
     "gatsby-theme-catalyst-core": "^1.0.0",
@@ -16,26 +16,19 @@
   "devDependencies": {
     "prettier": "^2.0.1"
   },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-plugin"
-  ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ehowey/gatsby-starter-catalyst-core"
+    "url": "https://github.com/villagekit/villagekit.com"
   },
   "bugs": {
-    "url": "https://github.com/ehowey/gatsby-theme-catalyst/issues"
+    "url": "https://github.com/villagekit/villagekit.com/issues"
   }
 }

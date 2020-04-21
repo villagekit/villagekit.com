@@ -1,24 +1,26 @@
-# Gatsby Starter Catalyst
+# villagekit.com
 
-Basic starter that could be used as a barebones starting point for building a finished website. Implements `gatsby-theme-catalyst-core`, `gatsby-theme-catalyst-header-top`, and `gatsby-theme-catalyst-footer`.
+a Village Kit website :house_with_garden:
 
-**Documentation**
+made using [`gatsby`](https://www.gatsbyjs.org/) and [`gatsby-theme-catalyst`](https://github.com/ehowey/gatsby-theme-catalyst)
 
-[Read the docs on Github](https://github.com/ehowey/gatsby-theme-catalyst)
+## How to change content
 
-**Catalyzing Start**
+### Pages
 
-```sh
-# create a new Gatsby site using the catalyst basic starter site
-gatsby new catalyst https://github.com/ehowey/gatsby-starter-catalyst
+TODO
+
+### Blog posts
+
+TODO
+
+## How to develop
+
+With Node.js installed (using [`nvm`](https://github.com/nvm-sh/nvm))
+
+```shell
+git clone git@github.com:villagekit/villagekit.com
+cd villagekit.com
+npm install
+npm start
 ```
-
-[Read the Gatsby Quick Start Guide](https://www.gatsbyjs.org/docs/quick-start)
-
-**Demo**
-
-[https://gatsby-starter-catalyst.netlify.app/](https://gatsby-starter-catalyst.netlify.app/)
-
-## About Gatsby Theme Catalyst
-
-The Catalyst series of themes and starters for [GatsbyJS](https://www.gatsbyjs.org/) were designed to provide an opinionated set of integrated themes and starters that can be used to accelerate your next Gatsby project. The vision is for one "core" theme in which most dependencies and components are contained followed by progressively more styled and refined child themes and starters. These themes rely heavily on [Theme-UI](https://theme-ui.com/) and [MDX](https://mdxjs.com/getting-started/gatsby/).
