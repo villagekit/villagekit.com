@@ -15,15 +15,18 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "prettier": "^2.0.1"
+    "modern-node": "^2.7.0"
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
     "clean": "gatsby clean",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "develop": "gatsby develop",
+    "format": "modern format",
+    "lint": "modern lint",
+    "precommit": "modern precommit",
     "start": "npm run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "test": "modern test"
   },
   "repository": {
     "type": "git",

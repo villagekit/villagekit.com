@@ -4,7 +4,7 @@ module.exports = {
     description: `Speed up your GatsbyJS development workflow. Designed as a set of opinionated and advanced themes and starters using MDX and Theme-UI. Incorporates gatsby-theme-catalyst-core, gatsby-theme-catalyst-header-top, and gatsby-theme-catalyst-footer.`,
     keywords: [`gatsby`, `theme`, `react`],
     author: `Eric Howey`,
-    siteUrl: `https://gatsby-starter-catalyst.netlify.app`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
+    siteUrl: `https://gatsby-starter-catalyst.netlify.app`, // Change to you site address, required for sitemap.xml and robots.txt file among other things
     menuLinks: [
       /*
       {
@@ -63,7 +63,7 @@ module.exports = {
     {
       resolve: `gatsby-theme-catalyst-core`,
       options: {
-        //Default options are:
+        // Default options are:
         // contentPath: `content/pages`,
         // assetPath: `content/assets`,
         // displaySiteLogo: true,
@@ -74,7 +74,7 @@ module.exports = {
         // useStickyHeader: false,
         // useSocialLinks: true,
         // useColorMode: true,
-        //footerContentLocation: "left", // "left", "right", "center"
+        // footerContentLocation: "left", // "left", "right", "center"
       },
     },
     `gatsby-theme-catalyst-header-top`, // Try `gatsby-theme-catalyst-header-side`
@@ -91,6 +91,6 @@ module.exports = {
         icon: `content/assets/catalyst-site-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-netlify`
+    `gatsby-plugin-netlify`,
   ],
 }
