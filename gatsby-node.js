@@ -4,9 +4,9 @@ exports.createSchemaCustomization = ({ actions }) => {
   const { createFieldExtension, createTypes } = actions
   createFieldExtension({
     name: `defaultArray`,
-    extend () {
+    extend() {
       return {
-        resolve (source, args, context, info) {
+        resolve(source, args, context, info) {
           if (source[info.fieldName] == null) {
             return []
           }

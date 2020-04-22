@@ -11,23 +11,26 @@
     "gatsby-theme-catalyst-footer": "^1.0.0",
     "gatsby-theme-catalyst-header-side": "^1.0.0",
     "gatsby-theme-catalyst-header-top": "^1.0.0",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "theme-ui": "^0.3.1"
   },
   "devDependencies": {
-    "modern-node": "^2.7.0"
+    "eslint": "^6.8.0",
+    "eslint-config-gatsby-standard": "^2.2.0",
+    "eslint-plugin-mdx": "^1.6.9",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.7"
   },
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
-    "format": "modern format",
-    "lint": "modern lint",
-    "precommit": "modern precommit",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext js,jsx,mdx",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "modern test"
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",
@@ -35,5 +38,16 @@
   },
   "bugs": {
     "url": "https://github.com/villagekit/villagekit.com/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,mdx}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
   }
 }
