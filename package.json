@@ -6,6 +6,7 @@
   "author": "Village Kit <hello@villagekit.com>",
   "dependencies": {
     "gatsby": "^2.20.25",
+    "gatsby-plugin-netlify": "^2.2.3",
     "gatsby-theme-catalyst-core": "^1.0.0",
     "gatsby-theme-catalyst-footer": "^1.0.0",
     "gatsby-theme-catalyst-header-side": "^1.0.0",
