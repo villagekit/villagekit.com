@@ -12,7 +12,8 @@
     "gatsby-theme-catalyst-header-side": "^1.0.0",
     "gatsby-theme-catalyst-header-top": "^1.0.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "theme-ui": "^0.3.1"
   },
   "devDependencies": {
     "modern-node": "^2.7.0"
