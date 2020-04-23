@@ -19,6 +19,11 @@ module.exports = {
         link: `/team`,
         type: `internal`,
       },
+      {
+        name: `Blog`,
+        link: `/blog`,
+        type: `internal`,
+      },
       /*
       {
         name: `Page 2`,
@@ -97,6 +102,12 @@ module.exports = {
         theme_color: `#cccccc`,
         display: `minimal-ui`,
         icon: `content/assets/catalyst-site-icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-theme-catalyst-blog`,
+      options: {
+        excerptLength: `280`,
       },
     },
     `gatsby-plugin-netlify`,
