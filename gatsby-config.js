@@ -110,6 +110,71 @@ module.exports = {
         excerptLength: `280`,
       },
     },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            output: `/rss.xml`,
+            title: `Village Kit RSS Feed`,
+            query: `
+              {
+                allCatalystPost(
+                  sort: { fields: [date, title], order: DESC }
+                  limit: 1000
+                  filter: { draft: { eq: false } }
+                ) {
+                  nodes {
+                    id
+                    slug
+                    title
+                    author
+                    excerpt
+                    date(formatString: "ddd, DD MMM YYYY HH:mm:ss ZZ")
+                    featuredImage {
+                      childImageSharp {
+                        resized:resize(width: 1024) {
+                          src
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            serialize: ({
+              query: {
+                site: {
+                  siteMetadata: { siteUrl },
+                },
+                allCatalystPost,
+              },
+            }) => {
+              return allCatalystPost.nodes.map((node) => ({
+                guid: `${siteUrl}/id/${node.id}`,
+                link: `${siteUrl}${node.slug}`,
+                title: node.title,
+                author: node.author,
+                description: node.excerpt,
+                pubDate: node.date,
+                image: `${siteUrl}${node.featuredImage.childImageSharp.resized.src}`,
+              }))
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-netlify`,
   ],
 }
