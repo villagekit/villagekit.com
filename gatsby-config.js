@@ -67,7 +67,7 @@ module.exports = {
       },
       {
         name: `Github`,
-        link: `https://www.github.com/ehowey`,
+        link: `https://www.github.com/villagekit`,
         location: `all`,
       },
     ],
