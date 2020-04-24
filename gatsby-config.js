@@ -176,5 +176,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify`,
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '5',
+        matomoUrl: 'https://analytics.mikey.nz',
+        siteUrl: 'https://villagekit.com',
+      },
+    },
   ],
 }
