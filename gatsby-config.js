@@ -15,8 +15,20 @@ module.exports = {
     siteUrl: `https://villagekit.com`,
     menuLinks: [
       {
-        name: `Team`,
-        link: `/team`,
+        name: `Kits`,
+        link: `/kits`,
+        type: `internal`,
+        subMenu: [
+          {
+            name: `Grid`,
+            link: `/kits/grid`,
+            type: `internal`,
+          },
+        ],
+      },
+      {
+        name: `Systems`,
+        link: `/systems`,
         type: `internal`,
       },
       {
@@ -24,25 +36,16 @@ module.exports = {
         link: `/blog`,
         type: `internal`,
       },
-      /*
       {
-        name: `Page 2`,
-        link: `/page-2`,
-        type: `internal`, //internal or anchor
-        subMenu: [
-          {
-            name: `Sub 1`,
-            link: `/sub-1`,
-            type: `internal`, //internal or anchor
-          },
-          {
-            name: `Sub 2`,
-            link: `/sub-2`,
-            type: `internal`, //internal or anchor
-          },
-        ],
+        name: `Team`,
+        link: `/team`,
+        type: `internal`,
       },
-      */
+      {
+        name: `Resources`,
+        link: `/resources`,
+        type: `internal`,
+      },
     ],
     socialLinks: [
       {

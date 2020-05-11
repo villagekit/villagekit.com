@@ -5,26 +5,26 @@
   "private": true,
   "author": "Village Kit <hello@villagekit.com>",
   "dependencies": {
-    "gatsby": "^2.20.25",
-    "gatsby-plugin-feed": "^2.4.3",
+    "gatsby": "^2.21.21",
+    "gatsby-plugin-feed": "^2.5.1",
     "gatsby-plugin-matomo": "^0.8.3",
     "gatsby-plugin-netlify": "^2.2.3",
     "gatsby-theme-catalyst-blog": "^1.0.0",
-    "gatsby-theme-catalyst-core": "^1.0.0",
-    "gatsby-theme-catalyst-footer": "^1.0.0",
+    "gatsby-theme-catalyst-core": "^1.2.1",
+    "gatsby-theme-catalyst-footer": "^1.1.0",
     "gatsby-theme-catalyst-header-side": "^1.0.0",
-    "gatsby-theme-catalyst-header-top": "^1.0.0",
+    "gatsby-theme-catalyst-header-top": "^1.1.0",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "theme-ui": "^0.3.1"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "eslint-config-gatsby-standard": "^2.2.0",
     "eslint-plugin-mdx": "^1.6.9",
     "husky": "^4.2.5",
-    "lint-staged": "^10.1.7"
+    "lint-staged": "^10.2.2"
   },
   "scripts": {
     "build": "gatsby build",
