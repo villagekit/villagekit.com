@@ -16,11 +16,11 @@ TODO
 
 ## How to develop
 
-With Node.js installed (using [`nvm`](https://github.com/nvm-sh/nvm))
+With Node.js installed (using [`nvm`](https://github.com/nvm-sh/nvm)) and [`yarn`](https://yarnpkg.com/)
 
 ```shell
 git clone git@github.com:villagekit/villagekit.com
 cd villagekit.com
-npm install
-npm start
+yarn
+yarn start
 ```
