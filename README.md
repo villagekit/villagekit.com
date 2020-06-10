@@ -1,8 +1,8 @@
-# villagekit.com
+# villagekit.com :house_with_garden:
 
-a Village Kit website :house_with_garden:
+> the Village Kit provides open source protocols and turn-key solutions for modular living infrastructure
 
-made using [`gatsby`](https://www.gatsbyjs.org/) and [`gatsby-theme-catalyst`](https://github.com/ehowey/gatsby-theme-catalyst)
+a website made using [`gatsby`](https://www.gatsbyjs.org/) and [`gatsby-theme-catalyst`](https://github.com/ehowey/gatsby-theme-catalyst)
 
 ## How to change content
 

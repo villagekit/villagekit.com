@@ -1,15 +1,18 @@
 module.exports = {
   siteMetadata: {
     title: `Village Kit`,
-    description: `Village Kit is a platform for open source, modular living infrastructure that evolves with you.`,
+    description: `the Village Kit provides open source protocols and turn-key solutions for modular living infrastructure`,
     keywords: [
+      `turn-key`,
       `modular`,
       `open`,
       `furniture`,
       `construction`,
+      `housing`,
       `village`,
       `kit`,
       `catalog`,
+      `protocols`,
     ],
     author: `Village Kit Limited`,
     siteUrl: `https://villagekit.com`,
@@ -27,8 +30,8 @@ module.exports = {
         ],
       },
       {
-        name: `Systems`,
-        link: `/systems`,
+        name: `Protocols`,
+        link: `/protocols`,
         type: `internal`,
       },
       {
