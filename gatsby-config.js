@@ -1,52 +1,53 @@
 module.exports = {
   siteMetadata: {
     title: `Village Kit`,
-    description: `the Village Kit provides open source protocols and turn-key solutions for modular living infrastructure`,
+    description: `we provide modular building blocks for sustainable living`,
     keywords: [
       `turn-key`,
       `modular`,
       `open`,
+      `building`,
+      `blocks`,
+      `grid`,
       `furniture`,
+      `structures`,
       `construction`,
       `housing`,
       `village`,
       `kit`,
       `catalog`,
       `protocols`,
+      `patterns`,
+      `creative`,
+      `playful`,
+      `re-usable`,
     ],
     author: `Village Kit Limited`,
     siteUrl: `https://villagekit.com`,
     menuLinks: [
-      {
-        name: `Kits`,
-        link: `/kits`,
-        type: `internal`,
-        subMenu: [
-          {
-            name: `Grid`,
-            link: `/kits/grid`,
-            type: `internal`,
-          },
-        ],
-      },
-      {
-        name: `Protocols`,
-        link: `/protocols`,
-        type: `internal`,
-      },
-      {
-        name: `Blog`,
-        link: `/blog`,
-        type: `internal`,
-      },
       {
         name: `Team`,
         link: `/team`,
         type: `internal`,
       },
       {
-        name: `Resources`,
-        link: `/resources`,
+        name: `Principles`,
+        link: `/principles`,
+        type: `internal`,
+      },
+      {
+        name: `Patterns`,
+        link: `/patterns`,
+        type: `internal`,
+      },
+      {
+        name: `Kits`,
+        link: `/kits`,
+        type: `internal`,
+      },
+      {
+        name: `Blog`,
+        link: `/blog`,
         type: `internal`,
       },
     ],
