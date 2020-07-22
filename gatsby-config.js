@@ -43,7 +43,7 @@ module.exports = {
       {
         name: `Research`,
         link: `https://roamresearch.com/#/app/villagekit/page/X2c6rF5zE`,
-        type: `external`,
+        type: `internal`,
       },
     ],
     socialLinks: [
