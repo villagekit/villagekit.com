@@ -1,15 +1,42 @@
+import { Flex, Grid, Text } from 'theme-ui'
+
 <SEO title={'Kia Ora'} />
 
-# Village Kit
+<Flex sx={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
 
-We provide modular building blocks for sustainable living.
+<Text
+  sx={{
+    fontSize: 2,
+    textTransform: 'uppercase',
+    color: 'highlight',
+    fontWeight: 'bold',
+  }}
+>
+  Our mission:
+</Text>
 
-![Village Kit](../assets/catalyst-site-social.jpg)
+<Text sx={{ fontSize: 6 }}>
+  To provide accessible building blocks for abundant living
+</Text>
+
+From the small blocks inside your house:
+
+![grid cube](../assets/grid-kit.svg)
+
+To your house you live in:
+
+![house cube](../assets/house-cube.svg)
+
+To the village you live amongst:
+
+![village cube](../assets/village-cube.svg)
+
+We want to enable you to be creative and connected.
 
 ## [Principles](./principles)
 
 ## [Team](./team)
 
-## [Patterns](./patterns)
+## [Roadmap](./roadmap)
 
-## [Kits](./kits)
+</Flex>
