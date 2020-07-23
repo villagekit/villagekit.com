@@ -27,7 +27,7 @@ module.exports = {
     menuLinks: [
       {
         name: `Subscribe`,
-        link: `https://cdn.forms-content.sg-form.com/88f9a281-ca36-11ea-a93e-6e8535c83bfb`,
+        link: `http://eepurl.com/g-4NVn`,
         type: `internal`,
       },
       {

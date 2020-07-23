@@ -4,7 +4,7 @@ import { Box, Button, Flex, Grid, Text } from 'theme-ui'
 
 <Flex sx={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
 
-<Box as='header'>
+<Box as='header' sx={{ padding: 4 }}>
 
 <Text
   sx={{
@@ -79,7 +79,9 @@ To the village you live amongst:
 
 <Button
   as="a"
-  href="https://cdn.forms-content.sg-form.com/88f9a281-ca36-11ea-a93e-6e8535c83bfb"
+  href="http://eepurl.com/g-4NVn"
+  target="_blank"
+  rel="noopener noreferrer"
   sx={{ fontSize: 7, margin: 5, backgroundColor: 'accent' }}
 >
   Subscribe
@@ -89,11 +91,14 @@ Learn more about us:
 
 <Flex
   sx={{
-    flexDirection: 'row',
-    alignItems: 'baseline',
+    flexDirection: [null, 'column', null, null, 'row'],
+    alignItems: [null, 'center', null, null, 'baseline'],
     '& > *': {
-      padding: 3
+      padding: [null, 2, null, null, 3],
     },
+    '& > p': {
+      display: [null, 'none', null, null, 'inherit']
+    }
   }}>
 
 ## [Principles](./principles)
@@ -105,6 +110,10 @@ Learn more about us:
 :
 
 ## [Roadmap](./roadmap)
+
+:
+
+## <a href="https://roamresearch.com/#/app/villagekit/page/X2c6rF5zE" target="_blank" rel="noopener noreferrer">Research</a>
 
 </Flex>
 
