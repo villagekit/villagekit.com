@@ -10,13 +10,13 @@ We provide open source protocols and turn-key solutions for modular living infra
 
 We want to enable an ecosystem of reusable and interoperable building blocks to sustain life and evolve in community.
 
-<Flex sx={{ justifyContent: 'space-between' }}>
+<SectionTitleWrapper>
 
 ## Practical
 
 ![water cube](../assets/water-cube.svg)
 
-</Flex>
+</SectionTitleWrapper>
 
 ### Support the general movement with specific prototypes
 
@@ -39,13 +39,13 @@ Then anyone anywhere can download designs to create local products and employmen
 
 The more who participate, the more use, the more designs, the more adaptation, the more ways to re-use, the more common systems for systems.
 
-<Flex sx={{ justifyContent: 'space-between' }}>
+<SectionTitleWrapper>
 
 ## Affordable
 
 ![bush cube](../assets/bush-cube.svg)
 
-</Flex>
+</SectionTitleWrapper>
 
 ### Use non-toxic materials
 
@@ -63,13 +63,13 @@ If you family visits for a time, you should be able to create a new space for th
 
 As seasons come and go, you should be able to adjust your spaces to suit your current needs.
 
-<Flex sx={{ justifyContent: 'space-between' }}>
+<SectionTitleWrapper>
 
 ## Technical
 
 ![solar cube](../assets/solar-cube.svg)
 
-</Flex>
+</SectionTitleWrapper>
 
 ### Support well-engineered, interoperable, and re-usable construction systems
 
@@ -93,3 +93,15 @@ For example:
 
 - [OpenSCAD](http://www.openscad.org/)
 - [OpenJSCAD](https://openjscad.org/)
+
+export function SectionTitleWrapper ({ children }) {
+  return (
+    <Flex
+      children={children}
+      sx={{
+        flexDirection: ['column', null, 'row', null, null],
+        justifyContent: 'space-between'
+      }}
+    />
+  )
+}

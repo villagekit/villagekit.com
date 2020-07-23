@@ -26,19 +26,20 @@ import { Box, Button, Flex, Grid, Text } from 'theme-ui'
 <Box
   as='ol'
   sx={{
+    paddingLeft: 0,
     '& > li': {
       listStyle: 'none',
       display: 'flex',
-      flexDirection: 'row',
+      flexDirection: ['column', null, 'row', null, null],
       alignItems: 'center',
-      justifyContent: 'space-between'
+      justifyContent: ['center', null, 'space-between', null, null],
     },
     '& > li > p:nth-child(1)': {
       fontSize: 3,
     },
     '& > li > p:nth-child(2)': {
-      marginLeft: 4,
-      alignSelf: 'flex-end'
+      marginLeft: [0, null, 4, null, null],
+      alignSelf: ['center', null, 'flex-end', null, null],
     },
   }}
 >
@@ -91,13 +92,13 @@ Learn more about us:
 
 <Flex
   sx={{
-    flexDirection: [null, 'column', null, null, 'row'],
-    alignItems: [null, 'center', null, null, 'baseline'],
+    flexDirection: ['column', null, 'row', null, null],
+    alignItems: ['center', null, 'baseline', null, null],
     '& > *': {
-      padding: [null, 2, null, null, 3],
+      padding: [2, null, 3, null, null],
     },
     '& > p': {
-      display: [null, 'none', null, null, 'inherit']
+      display: ['none', null, 'inherit', null, null]
     }
   }}>
 
