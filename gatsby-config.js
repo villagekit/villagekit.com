@@ -1,42 +1,38 @@
 module.exports = {
   siteMetadata: {
     title: `Village Kit`,
-    description: `the Village Kit provides open source protocols and turn-key solutions for modular living infrastructure`,
+    description: `we provide modular building blocks for sustainable living`,
     keywords: [
       `turn-key`,
       `modular`,
       `open`,
+      `building`,
+      `blocks`,
+      `grid`,
       `furniture`,
+      `structures`,
       `construction`,
       `housing`,
       `village`,
       `kit`,
       `catalog`,
       `protocols`,
+      `patterns`,
+      `creative`,
+      `playful`,
+      `re-usable`,
     ],
     author: `Village Kit Limited`,
     siteUrl: `https://villagekit.com`,
     menuLinks: [
       {
-        name: `Kits`,
-        link: `/kits`,
-        type: `internal`,
-        subMenu: [
-          {
-            name: `Grid`,
-            link: `/kits/grid`,
-            type: `internal`,
-          },
-        ],
-      },
-      {
-        name: `Protocols`,
-        link: `/protocols`,
+        name: `Subscribe`,
+        link: `http://eepurl.com/g-4NVn`,
         type: `internal`,
       },
       {
-        name: `Blog`,
-        link: `/blog`,
+        name: `Principles`,
+        link: `/principles`,
         type: `internal`,
       },
       {
@@ -45,8 +41,13 @@ module.exports = {
         type: `internal`,
       },
       {
-        name: `Resources`,
-        link: `/resources`,
+        name: `Roadmap`,
+        link: `/roadmap`,
+        type: `internal`,
+      },
+      {
+        name: `Research`,
+        link: `https://roamresearch.com/#/app/villagekit/page/X2c6rF5zE`,
         type: `internal`,
       },
     ],
@@ -110,78 +111,6 @@ module.exports = {
         icon: `content/assets/catalyst-site-icon.png`,
       },
     },
-    {
-      resolve: `gatsby-theme-catalyst-blog`,
-      options: {
-        excerptLength: `280`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            output: `/rss.xml`,
-            title: `Village Kit RSS Feed`,
-            query: `
-              {
-                allCatalystPost(
-                  sort: { fields: [date, title], order: DESC }
-                  limit: 1000
-                  filter: { draft: { eq: false } }
-                ) {
-                  nodes {
-                    id
-                    slug
-                    title
-                    author
-                    excerpt
-                    date(formatString: "ddd, DD MMM YYYY HH:mm:ss ZZ")
-                    featuredImage {
-                      childImageSharp {
-                        resized:resize(width: 1024) {
-                          src
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            serialize: ({
-              query: {
-                site: {
-                  siteMetadata: { siteUrl },
-                },
-                allCatalystPost,
-              },
-            }) => {
-              return allCatalystPost.nodes.map((node) => ({
-                guid: `${siteUrl}/id/${node.id}`,
-                link: `${siteUrl}${node.slug}`,
-                title: node.title,
-                author: node.author,
-                description: node.excerpt,
-                pubDate: node.date,
-                image: `${siteUrl}${node.featuredImage.childImageSharp.resized.src}`,
-              }))
-            },
-          },
-        ],
-      },
-    },
-    `gatsby-plugin-netlify`,
     {
       resolve: 'gatsby-plugin-matomo',
       options: {

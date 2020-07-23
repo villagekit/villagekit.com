@@ -1,32 +1,120 @@
-import { Box, Grid, Text } from 'theme-ui'
+import { Box, Button, Flex, Grid, Text } from 'theme-ui'
 
 <SEO title={'Kia Ora'} />
 
-# Village Kit
+<Flex sx={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
 
-The Village Kit provides open source protocols and turn-key solutions for modular living infrastructure
+<Box as='header' sx={{ padding: 4 }}>
 
-We want to enable an ecosystem of reusable and interoperable building blocks to sustain life and evolve in community.
+<Text
+  sx={{
+    fontSize: 2,
+    textTransform: 'uppercase',
+    color: 'secondary',
+    fontWeight: 'bold',
+  }}
+>
+  Our mission:
+</Text>
 
-![Village Kit](../assets/catalyst-site-social.jpg)
+<Text sx={{ fontSize: 6, color: 'primary' }}>
+  To provide accessible building blocks for abundant living
+</Text>
 
-## Principles
+</Box>
 
-- Support the general movement with specific prototypes
-- Support well-engineered, modular, interoperable, and re-usable construction systems
-  - As a trade-off with bespoke upcycling that is not modular, interoperable, or re-usable
-  - For example: [Grid Beam](https://gridbeam.xyz/), [structural pipe fittings](https://en.wikipedia.org/wiki/Structural_pipe_fitting), [T-Slot](https://en.wikipedia.org/wiki/T-slot_structural_framing)
-- Use code-based [CAD](https://en.wikipedia.org/wiki/Computer-aided_design) where possible
-  - For example: [OpenSCAD](http://www.openscad.org/) or [OpenJSCAD](https://openjscad.org/)
-- Enable open sharing of fractal (macro and micro) designs
-  - Such as a [package manager](https://en.wikipedia.org/wiki/Package_manager) (e.g. [`npm`](https://www.npmjs.com/)) for physcial modules
-- Accumulating re-usable construction materials should be a viable economic savings strategy
-- Less unconstrained macro-utopias (as they continue to fail), more constrained pragmatic business plans and clear boundaries to support micro-utopias
-  - For example: an #ecovillage requires too much upfront privilege, the whole system is dependent on self-actualizing visions, and there are unmitigated risk when conflicts inevitably arise
-  - Another example: the Burning Man org (and regional burn orgs) is actually authoritarian, but the authority is very limited in scope (e.g. where you are allowed to camp), which enables each camp to be their own anarchist micro-utopia
+<Box
+  as='ol'
+  sx={{
+    '& > li': {
+      listStyle: 'none',
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between'
+    },
+    '& > li > p:nth-child(1)': {
+      fontSize: 3,
+    },
+    '& > li > p:nth-child(2)': {
+      marginLeft: 4,
+      alignSelf: 'flex-end'
+    },
+  }}
+>
 
-## Protocols
+<Box as='li'>
 
-## Kits
+From the small blocks inside your house:
 
-We are developing turn-key solutions to help you live better:
+![grid cube](../assets/grid-kit.svg)
+
+</Box>
+
+<Box as='li'>
+
+To your house you live in:
+
+![house cube](../assets/house-cube.svg)
+
+</Box>
+
+<Box as='li'>
+
+To the village you live amongst:
+
+![village cube](../assets/village-cube.svg)
+
+</Box>
+
+</Box>
+
+<Box sx={{ fontSize: 4 }}>
+  We want to enable you to be{' '}
+  <Text sx={{ display: 'inline', color: 'accent' }}>
+    creative and connected
+  </Text>
+  .
+</Box>
+
+<Button
+  as="a"
+  href="http://eepurl.com/g-4NVn"
+  target="_blank"
+  rel="noopener noreferrer"
+  sx={{ fontSize: 7, margin: 5, backgroundColor: 'accent' }}
+>
+  Subscribe
+</Button>
+
+Learn more about us:
+
+<Flex
+  sx={{
+    flexDirection: [null, 'column', null, null, 'row'],
+    alignItems: [null, 'center', null, null, 'baseline'],
+    '& > *': {
+      padding: [null, 2, null, null, 3],
+    },
+    '& > p': {
+      display: [null, 'none', null, null, 'inherit']
+    }
+  }}>
+
+## [Principles](./principles)
+
+:
+
+## [Team](./team)
+
+:
+
+## [Roadmap](./roadmap)
+
+:
+
+## <a href="https://roamresearch.com/#/app/villagekit/page/X2c6rF5zE" target="_blank" rel="noopener noreferrer">Research</a>
+
+</Flex>
+
+</Flex>
