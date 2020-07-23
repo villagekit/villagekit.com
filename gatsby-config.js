@@ -26,6 +26,11 @@ module.exports = {
     siteUrl: `https://villagekit.com`,
     menuLinks: [
       {
+        name: `Subscribe`,
+        link: `https://cdn.forms-content.sg-form.com/88f9a281-ca36-11ea-a93e-6e8535c83bfb`,
+        type: `internal`,
+      },
+      {
         name: `Principles`,
         link: `/principles`,
         type: `internal`,

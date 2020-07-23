@@ -1,42 +1,111 @@
-import { Flex, Grid, Text } from 'theme-ui'
+import { Box, Button, Flex, Grid, Text } from 'theme-ui'
 
 <SEO title={'Kia Ora'} />
 
 <Flex sx={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
 
+<Box as='header'>
+
 <Text
   sx={{
     fontSize: 2,
     textTransform: 'uppercase',
-    color: 'highlight',
+    color: 'secondary',
     fontWeight: 'bold',
   }}
 >
   Our mission:
 </Text>
 
-<Text sx={{ fontSize: 6 }}>
+<Text sx={{ fontSize: 6, color: 'primary' }}>
   To provide accessible building blocks for abundant living
 </Text>
+
+</Box>
+
+<Box
+  as='ol'
+  sx={{
+    '& > li': {
+      listStyle: 'none',
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between'
+    },
+    '& > li > p:nth-child(1)': {
+      fontSize: 3,
+    },
+    '& > li > p:nth-child(2)': {
+      marginLeft: 4,
+      alignSelf: 'flex-end'
+    },
+  }}
+>
+
+<Box as='li'>
 
 From the small blocks inside your house:
 
 ![grid cube](../assets/grid-kit.svg)
 
+</Box>
+
+<Box as='li'>
+
 To your house you live in:
 
 ![house cube](../assets/house-cube.svg)
+
+</Box>
+
+<Box as='li'>
 
 To the village you live amongst:
 
 ![village cube](../assets/village-cube.svg)
 
-We want to enable you to be creative and connected.
+</Box>
+
+</Box>
+
+<Box sx={{ fontSize: 4 }}>
+  We want to enable you to be{' '}
+  <Text sx={{ display: 'inline', color: 'accent' }}>
+    creative and connected
+  </Text>
+  .
+</Box>
+
+<Button
+  as="a"
+  href="https://cdn.forms-content.sg-form.com/88f9a281-ca36-11ea-a93e-6e8535c83bfb"
+  sx={{ fontSize: 7, margin: 5, backgroundColor: 'accent' }}
+>
+  Subscribe
+</Button>
+
+Learn more about us:
+
+<Flex
+  sx={{
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    '& > *': {
+      padding: 3
+    },
+  }}>
 
 ## [Principles](./principles)
 
+:
+
 ## [Team](./team)
 
+:
+
 ## [Roadmap](./roadmap)
+
+</Flex>
 
 </Flex>
