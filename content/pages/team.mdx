@@ -1,10 +1,16 @@
+import { Box } from 'theme-ui'
+
 <SEO title="Team" />
 
 # Village Kit: Team
 
 ## Rongomai Bailey
 
+<TeamImageWrapper>
+
 ![Rongomai](../assets/rongomai.jpg)
+
+</TeamImageWrapper>
 
 Rongomai is a jack-of-all-trades, working professionally in creative, mangement and technical roles.
 
@@ -16,10 +22,34 @@ In 2020 he has the year off and will spend time on this project, programming his
 
 ## Mikey Williams
 
+<TeamImageWrapper>
+
 ![Mikey](../assets/mikey.jpg)
+
+</TeamImageWrapper>
 
 [Mikey](https://dinosaur.is) is a social entrepreneur, senior web developer, and community facilitator based in Wellington.
 
 Proficient in technical (software and hardware) systems, product development, system administration, leading a team to deliver business outcomes, documenting hard technical concepts in friendly language, and facilitating or- ganizations to solve challenging problems.
 
 He’s part of the [Enspiral network](https://enspiral.com), works as part-time CTO of [Choice](https://choicetopay.com), is an [Edmund Hillary fellow](https://www.ehf.org/), contributes to [Scuttlebutt](https://scuttlebutt.nz), and is ready to focus on Village Kit from 2020 onward.
+
+export function TeamImageWrapper({ children }) {
+  return (
+    <Box
+      children={children}
+      sx={{
+        '& > p': {
+          maxHeight: '100%',
+          height: '33vh',
+        },
+        '.gatsby-resp-image-wrapper': {
+          maxHeight: '100%',
+        },
+        img: {
+          objectFit: 'contain',
+        },
+      }}
+    />
+  )
+}
