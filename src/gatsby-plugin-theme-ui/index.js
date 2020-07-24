@@ -31,11 +31,11 @@ export default merge(BaseTheme, {
       fontSize: [3, 4, null, 5, null],
     },
     navUl: {
-      '& > li:nth-child(1)': {
+      '& > li:nth-of-type(1)': {
         backgroundColor: 'accent',
         paddingX: 2,
       },
-      '& > li:nth-child(1) > a': {
+      '& > li:nth-of-type(1) > a': {
         color: 'light',
       },
     },

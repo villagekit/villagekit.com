@@ -4,11 +4,11 @@ import { Box, Button, Flex, Grid, Text } from 'theme-ui'
 
 <Flex sx={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
 
-<Box as='header' sx={{ padding: 4 }}>
+<Box as='header' sx={{ padding: [3, null, 5, null, null] }}>
 
 <Text
   sx={{
-    fontSize: 2,
+    fontSize: 3,
     textTransform: 'uppercase',
     color: 'secondary',
     fontWeight: 'bold',
@@ -21,11 +21,25 @@ import { Box, Button, Flex, Grid, Text } from 'theme-ui'
   To provide accessible building blocks for abundant living
 </Text>
 
+<Box 
+  sx={{
+    img: {
+      padding: [2, null, 4, null, null],
+      maxWidth: '100vw',
+    },
+  }}
+>
+
+![cover image](../assets/cover.svg)
+
+</Box>
+
 </Box>
 
 <Box
   as='ol'
   sx={{
+    paddingY: [2, null, 4, null, null],
     paddingLeft: 0,
     '& > li': {
       listStyle: 'none',
@@ -34,10 +48,10 @@ import { Box, Button, Flex, Grid, Text } from 'theme-ui'
       alignItems: 'center',
       justifyContent: ['center', null, 'space-between', null, null],
     },
-    '& > li > p:nth-child(1)': {
+    '& > li > p:nth-of-type(1)': {
       fontSize: 3,
     },
-    '& > li > p:nth-child(2)': {
+    '& > li > p:nth-of-type(2)': {
       marginLeft: [0, null, 4, null, null],
       alignSelf: ['center', null, 'flex-end', null, null],
     },

@@ -4,16 +4,6 @@
 
 a website made using [`gatsby`](https://www.gatsbyjs.org/) and [`gatsby-theme-catalyst`](https://github.com/ehowey/gatsby-theme-catalyst)
 
-## How to change content
-
-### Pages
-
-TODO
-
-### Blog posts
-
-TODO
-
 ## How to develop
 
 With Node.js installed (using [`nvm`](https://github.com/nvm-sh/nvm)) and [`yarn`](https://yarnpkg.com/)
@@ -24,3 +14,7 @@ cd villagekit.com
 yarn
 yarn start
 ```
+
+## Attributions
+
+- icons from [OpenMoji](https://openmoji.org/)
