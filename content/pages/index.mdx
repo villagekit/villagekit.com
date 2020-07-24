@@ -4,7 +4,7 @@ import { Box, Button, Flex, Grid, Text } from 'theme-ui'
 
 <Flex sx={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
 
-<Box as='header' sx={{ padding: [3, null, 5, null, null] }}>
+<Section as='header'>
 
 <Text
   sx={{
@@ -12,6 +12,7 @@ import { Box, Button, Flex, Grid, Text } from 'theme-ui'
     textTransform: 'uppercase',
     color: 'secondary',
     fontWeight: 'bold',
+    marginBottom: [1, null, 3, null, null],
   }}
 >
   Our mission:
@@ -24,8 +25,8 @@ import { Box, Button, Flex, Grid, Text } from 'theme-ui'
 <Box 
   sx={{
     img: {
-      padding: [2, null, 4, null, null],
-      maxWidth: '100vw',
+      paddingY: [2, null, 4, null, null],
+      maxWidth: '100%',
     },
   }}
 >
@@ -34,12 +35,13 @@ import { Box, Button, Flex, Grid, Text } from 'theme-ui'
 
 </Box>
 
-</Box>
+</Section>
+
+<Section>
 
 <Box
   as='ol'
   sx={{
-    paddingY: [2, null, 4, null, null],
     paddingLeft: 0,
     '& > li': {
       listStyle: 'none',
@@ -92,6 +94,10 @@ To the village you live amongst:
   .
 </Box>
 
+</Section>
+
+<Section>
+
 <Button
   as="a"
   href="http://eepurl.com/g-4NVn"
@@ -101,6 +107,10 @@ To the village you live amongst:
 >
   Subscribe
 </Button>
+
+</Section>
+
+<Section>
 
 Learn more about us:
 
@@ -132,4 +142,16 @@ Learn more about us:
 
 </Flex>
 
+</Section>
+
 </Flex>
+
+export function Section({ as = 'section', children }) {
+  return (
+    <Box
+      as={as}
+      children={children}
+      sx={{ paddingY: [3, null, 5, null, null] }}
+    />
+  )
+}
